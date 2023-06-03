@@ -90,6 +90,11 @@ class CfgFunctions
 			file = "\GES_Pylons\functions";
 			class updateSelectedPylons{};
 		};
+        class exportLoadOut
+        {
+            file = "\GES_Pylons\functions";
+            class exportLoadOut{};
+        };
         
 	};
 };
