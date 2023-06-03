@@ -28,3 +28,5 @@ _exportString = _exportString + format
 	"
 	,_object];
 copyToClipboard _exportString;
+if (_exportSQF)then{hint "Format: SQF\n Copied loadout to clipboard!";}else{hint "Format: INIT\n Copied loadout to clipboard!";}
+
