@@ -4,6 +4,9 @@ class cfgPatches
 {
     class GES_PylonLoadOutUI
     {
+		name = "Goose's Pylon Bodger";
+		author = "Goose";
+		url = "https://steamcommunity.com/sharedfiles/filedetails/?id=2980962612";
         units[] = {"GES_Module_PylonLoadOut"};
         requiredVersion = 1;
         requiredAddons[] = {"A3_Modules_F", "A3_3DEN"};
@@ -59,32 +62,32 @@ class CfgFunctions
 	{
 		class loadVehiclePylons
 		{
-			file = "\GES\functions";
+			file = "\GES_Pylons\functions";
 			class loadVehiclePylons{};
 		};
         class moduleEditPylons
 		{
-			file = "\GES\functions";
+			file = "\GES_Pylons\functions";
 			class moduleEditPylons{};
 		};
         class searchNSort
 		{
-			file = "\GES\functions";
+			file = "\GES_Pylons\functions";
 			class searchNSort{};
 		};
         class generatePylonMagazinesArray
         {
-            file = "\GES\functions";
+            file = "\GES_Pylons\functions";
             class generatePylonMagazinesArray{};
         };
         class updatePylonMagazineList
 		{
-			file = "\GES\functions";
+			file = "\GES_Pylons\functions";
 			class updatePylonMagazineList{};
 		};
         class updateSelectedPylons
 		{
-			file = "\GES\functions";
+			file = "\GES_Pylons\functions";
 			class updateSelectedPylons{};
 		};
         
