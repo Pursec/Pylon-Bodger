@@ -1,4 +1,6 @@
 #include "GESPylonUI.hpp"
+#include "ace_zeus_action.hpp"
+#include "zen_context_menu.hpp"
 
 class cfgPatches
 {
@@ -95,6 +97,10 @@ class CfgFunctions
             file = "\GES_Pylons\functions";
             class exportLoadOut{};
         };
-        
+        class menuEditPylons
+        {
+            file = "\GES_Pylons\functions";
+            class menuEditPylons{};
+        };    
 	};
 };
