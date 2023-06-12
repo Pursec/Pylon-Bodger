@@ -13,5 +13,9 @@ Arma 3 GUI for "bodging" pylon loadouts with incompatible magazines/weapons on t
 * SOON: Ability to allow certain players to use the bodger mid-game without going through zeus, editable by the Curator - who will be able to by default.
 
 Support me on Patreon or Kofi
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B5M6OHW)
- 
+
+
+
+[![patreon](https://github.com/Patreon/patreon-wordpress/blob/master/assets/img/Patreon_Logo_100.png)](https://www.patreon.com/user?u=54887552)
+
+ [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B5M6OHW)
