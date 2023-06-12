@@ -64,42 +64,42 @@ class CfgFunctions
 	{
 		class loadVehiclePylons
 		{
-			file = "\GES_Pylons\functions";
+			file = "\x\GES_Pylons\functions";
 			class loadVehiclePylons{};
 		};
         class moduleEditPylons
 		{
-			file = "\GES_Pylons\functions";
+			file = "\x\GES_Pylons\functions";
 			class moduleEditPylons{};
 		};
         class searchNSort
 		{
-			file = "\GES_Pylons\functions";
+			file = "\x\GES_Pylons\functions";
 			class searchNSort{};
 		};
         class generatePylonMagazinesArray
         {
-            file = "\GES_Pylons\functions";
+            file = "\x\GES_Pylons\functions";
             class generatePylonMagazinesArray{};
         };
         class updatePylonMagazineList
 		{
-			file = "\GES_Pylons\functions";
+			file = "\x\GES_Pylons\functions";
 			class updatePylonMagazineList{};
 		};
         class updateSelectedPylons
 		{
-			file = "\GES_Pylons\functions";
+			file = "\x\GES_Pylons\functions";
 			class updateSelectedPylons{};
 		};
         class exportLoadOut
         {
-            file = "\GES_Pylons\functions";
+            file = "\x\GES_Pylons\functions";
             class exportLoadOut{};
         };
         class menuEditPylons
         {
-            file = "\GES_Pylons\functions";
+            file = "\x\GES_Pylons\functions";
             class menuEditPylons{};
         };    
 	};
