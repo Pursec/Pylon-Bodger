@@ -7,9 +7,9 @@ Arma 3 GUI for "bodging" pylon loadouts with incompatible magazines/weapons on t
 * Multiple slot selection for modifying more than one Pylon on the fly
 * Toggle for changing pylon slot ownership to pilot or gunner
 * Export tools to export the current loadout for use on a vehicles initialization on mission start, or for use being called as a script/function at anytime
+* Saving and loading system of loadouts to let you save your favorites and then load them again exactly the same quickly
+* Ability to change pylon slot priorities on the fly
 
-
-* SOON: Saving and loading system of loadouts to let you save your favorites and then load them again exactly the same quickly
 * SOON: Ability to allow certain players to use the bodger mid-game without going through zeus, editable by the Curator - who will be able to by default.
 
 Support me on Patreon or Kofi
