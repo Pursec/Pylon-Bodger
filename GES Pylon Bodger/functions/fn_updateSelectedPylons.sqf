@@ -23,6 +23,9 @@ _originalPylonsInfo = + _currentPylonsInfo;
 {
 	_index = _forEachIndex;
 	{
+		if((_originalPylonsInfo select _index) select 3 isEqualTo "")then{
+			continue;
+		};
 		_vehicle removeWeaponTurret [[configFile >> "CfgMagazines" >> (_originalPylonsInfo select _index) select 3, "pylonWeapon"] call BIS_fnc_returnConfigEntry, _x];
 	}foreach _allTurrets;
 	_vehicle setPylonLoadout[_forEachIndex + 1, _x select 3, true, _x select 2];

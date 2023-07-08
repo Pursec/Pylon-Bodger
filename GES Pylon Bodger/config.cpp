@@ -101,6 +101,36 @@ class CfgFunctions
         {
             file = "\x\GES_Pylons\functions";
             class menuEditPylons{};
-        };    
+        };
+        class populateSaved
+        {
+            file = "\x\GES_Pylons\functions";
+            class populateSaved{};
+        };
+        class saveLoadOut
+        {
+            file = "\x\GES_Pylons\functions";
+            class saveLoadOut{};
+        };
+        class deleteLoadOut
+        {
+            file = "\x\GES_Pylons\functions";
+            class deleteLoadOut{};;
+        };
+        class loadSavedLoadOut
+        {
+            file = "\x\GES_Pylons\functions";
+            class loadSavedLoadOut{};
+        };
+        class populatePriorityMenu
+        {
+            file = "\x\GES_Pylons\functions";
+            class populatePriorityMenu{};
+        };
+        class setPriority
+        {
+            file = "\x\GES_Pylons\functions";
+            class setPriority{};
+        };
 	};
 };
