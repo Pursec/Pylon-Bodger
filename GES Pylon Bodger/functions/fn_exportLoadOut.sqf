@@ -22,19 +22,19 @@ if (_exportSQF) then
 };
 _exportString = _exportString + format["_allTurrets = %1;", _allTurrets] + endl;
 _exportString = _exportString + format["_loadout = %1;", _loadout] + endl;
-_exportString = _exportString + format["_originalLoadOut = getAllPylonsInfo %1;", _object] + endl;
+_exportString = _exportString + format["_originalPylonsInfo = getAllPylonsInfo %1;", _object] + endl;
 _exportString = _exportString + format
 	[
 	"
 {
 	_index = _forEachIndex;
 	{
-		if((_originalLoadOut select _index) select 3 isEqualTo """")then{
+		if((_originalPylonsInfo select _index) select 3 isEqualTo """")then{
 			continue;
 		};
-		%1 removeWeaponTurret [[configFile >> ""CfgMagazines"" >> (_originalLoadout select _index) select 3, ""pylonWeapon""] call BIS_fnc_returnConfigEntry, _x];
+		[%1, [[configFile >> ""CfgMagazines"" >> (_originalPylonsInfo select _index) select 3, ""pylonWeapon""] call BIS_fnc_returnConfigEntry, _x]] remoteExec [""removeWeaponTurret""];
 	}foreach _allTurrets;
-	%1 setPylonLoadout[_forEachIndex + 1, _x select 3, true, _x select 2];
+	[%1, [_forEachIndex + 1, _x select 3, true, _x select 2]] remoteExec [""setPylonLoadout""];
 }forEach _loadout;
 %1 setVariable [""pylonPriority"", %2];
 %1 setPylonsPriority %2;

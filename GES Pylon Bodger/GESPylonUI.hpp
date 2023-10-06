@@ -201,7 +201,7 @@ class RscGESPylonUI
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			action = "with uiNamespace do{[lbSelection VEHICLEPYLONS, MAGAZINELIST lbData lbCurSel(MAGAZINELIST), editingVehicle, TURRET] call GES_fnc_updateSelectedPylons; [] call GES_fnc_loadVehiclePylons}";
+			action = "with uiNamespace do{[lbSelection VEHICLEPYLONS, MAGAZINELIST lbData lbCurSel(MAGAZINELIST), editingVehicle, TURRET] call GES_fnc_updateSelectedPylons; []spawn{sleep 0.1;[] call GES_fnc_loadVehiclePylons}}";
 			
 		};
 		class exitButton

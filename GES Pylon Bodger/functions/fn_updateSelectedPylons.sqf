@@ -26,9 +26,11 @@ _originalPylonsInfo = + _currentPylonsInfo;
 		if((_originalPylonsInfo select _index) select 3 isEqualTo "")then{
 			continue;
 		};
-		_vehicle removeWeaponTurret [[configFile >> "CfgMagazines" >> (_originalPylonsInfo select _index) select 3, "pylonWeapon"] call BIS_fnc_returnConfigEntry, _x];
+		//_vehicle removeWeaponTurret [[configFile >> "CfgMagazines" >> (_originalPylonsInfo select _index) select 3, "pylonWeapon"] call BIS_fnc_returnConfigEntry, _x];
+		[_vehicle, [[configFile >> "CfgMagazines" >> (_originalPylonsInfo select _index) select 3, "pylonWeapon"] call BIS_fnc_returnConfigEntry, _x]] remoteExec ["removeWeaponTurret"];
 	}foreach _allTurrets;
-	_vehicle setPylonLoadout[_forEachIndex + 1, _x select 3, true, _x select 2];
+	//_vehicle setPylonLoadout[_forEachIndex + 1, _x select 3, true, _x select 2];
+	[_vehicle, [_forEachIndex + 1, _x select 3, true, _x select 2]] remoteExec ["setPylonLoadout"];
 }forEach _currentPylonsInfo;
 
 
